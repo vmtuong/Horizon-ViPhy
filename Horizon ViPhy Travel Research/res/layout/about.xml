@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    <TextView 
+      android:textAppearance="?android:attr/textAppearanceLarge" 
+      android:id="@+id/about_title" 
+      android:layout_width="wrap_content" 
+      android:layout_height="wrap_content" 
+      android:layout_centerHorizontal="true"
+      android:text="@string/about_title">
+    </TextView>
+    <Button 
+      android:id="@+id/about_back_button" 
+      android:layout_width="wrap_content" 
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:text="Back">
+    </Button>
+    <ScrollView   
+      android:id="@+id/ScrollView01"
+      android:layout_height="wrap_content"
+      android:layout_width="fill_parent"
+      android:layout_below="@id/about_title"
+      android:layout_above="@id/about_back_button">
+	    <TextView 
+	      android:id="@+id/about_content" 
+	      android:layout_width="fill_parent"
+	      android:layout_height="wrap_content"
+	      android:text="@string/about_text">
+	    </TextView>
+	</ScrollView>
+    
+    
+</RelativeLayout>

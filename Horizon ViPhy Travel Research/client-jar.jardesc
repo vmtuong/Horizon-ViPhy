@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jardesc>
+    <jar path="Aether's Notebook Android Client Examples/lib/aethersnotebook.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/Aether's Notebook Android Client/client-jar.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="true" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="true" exportOutputFolder="false">
+        <javaElement handleIdentifier="=Aether's Notebook Android Client/gen&lt;aethers.notebook.core{AethersNotebook.java"/>
+        <javaElement handleIdentifier="=Aether's Notebook Android Client/src&lt;aethers.notebook.core{LoggerServiceIdentifier.java"/>
+        <javaElement handleIdentifier="=Aether's Notebook Android Client/src&lt;aethers.notebook.core{AppenderServiceIdentifier.java"/>
+        <javaElement handleIdentifier="=Aether's Notebook Android Client/src&lt;aethers.notebook.core{TimeStamp.java"/>
+        <file path="/Aether's Notebook Android Client/src/aethers/notebook/core/AethersNotebook.aidl"/>
+        <javaElement handleIdentifier="=Aether's Notebook Android Client/gen&lt;aethers.notebook.core{LoggerService.java"/>
+        <file path="/Aether's Notebook Android Client/src/aethers/notebook/core/AppenderServiceIdentifier.aidl"/>
+        <file path="/Aether's Notebook Android Client/src/aethers/notebook/core/UnmanagedAppenderService.aidl"/>
+        <file path="/Aether's Notebook Android Client/src/aethers/notebook/core/LoggerServiceIdentifier.aidl"/>
+        <file path="/Aether's Notebook Android Client/src/aethers/notebook/core/TimeStamp.aidl"/>
+        <javaElement handleIdentifier="=Aether's Notebook Android Client/gen&lt;aethers.notebook.core{UnmanagedAppenderService.java"/>
+    </selectedElements>
+</jardesc>

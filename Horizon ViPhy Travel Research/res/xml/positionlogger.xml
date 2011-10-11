@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"> 
+
+    <PreferenceCategory
+            android:title="Position Logger Preferences">
+        <aethers.notebook.core.ui.EditIntegerPreference
+                android:key="@string/PositionLogger_Preferences_locationMinDistance"
+                android:title="Minimum Distance"
+                android:summary="Minimum distance travelled before location updates occur"
+                android:defaultValue="@string/Preferences_locationMinDistance_default"
+                android:inputType="phone" />
+        <aethers.notebook.core.ui.EditIntegerPreference
+                android:key="@string/PositionLogger_Preferences_locationMinTime"
+                android:title="Minimum Time"
+                android:summary="Minimum time to wait between location updates"
+                android:defaultValue="@string/Preferences_locationMinTime_default"
+                android:inputType="phone" />
+    </PreferenceCategory>
+                
+</PreferenceScreen>

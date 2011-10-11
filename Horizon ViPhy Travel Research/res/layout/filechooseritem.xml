@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    <ImageView 
+            android:id="@+id/filechooseritem_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp" />
+	<TextView
+	        android:id="@+id/filechooseritem_text"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="25sp"
+	        android:textColor="#ffffff"
+	        android:maxLines="1"
+	        android:scrollHorizontally="true"
+	        android:lineSpacingExtra="5sp" />
+</LinearLayout>

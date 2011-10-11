@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        package="aethers.notebook"
+        android:versionCode="1"
+        android:versionName="1.0">
+
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+	<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.BATTERY_STATS" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	
+	<uses-permission android:name="android.permission.READ_CONTACTS"/>
+	<uses-permission android:name="android.permission.READ_SMS"/>
+	
+	<uses-sdk android:targetSdkVersion="8" android:minSdkVersion="7" />
+
+    <application
+            android:icon="@drawable/icon"
+            android:label="@string/application_name">
+    
+        <activity android:name=".appender.managed.file.ConfigurationActivity" />
+        <activity android:name=".logger.managed.position.ConfigurationActivity" />
+        <activity android:name=".appender.managed.uploader.ConfigurationActivity" />
+        <activity android:name=".logger.managed.wifi.ConfigurationActivity" />
+        <activity android:name=".core.ui.ConfigurationActivity"/>
+        <activity android:name=".core.ui.filechooser.DirectoryChooser" />
+        <activity android:name=".core.ui.filechooser.FileChooser" />
+        <activity android:name="horizon.viphytravel.Introduction">
+        	<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="horizon.viphytravel.UserInfo" />
+        <activity android:name="horizon.viphytravel.MainMenu" />
+        <activity android:name="horizon.viphytravel.About" />
+        <activity android:name="horizon.viphytravel.WebLoader" 
+        	android:theme="@android:style/Theme.Dialog"/>
+            
+        <service android:name=".core.CoreService">
+            <intent-filter>
+                <action android:name="aethers.notebook.action.ACTION_CONNECT" />
+            </intent-filter>
+        </service>
+        
+        <service android:name=".appender.managed.file.FileAppender" />
+        <service android:name=".appender.managed.uploader.UploaderAppender" />
+        
+        <service android:name=".logger.managed.celllocation.CellLocationLogger" />
+        <service android:name=".logger.managed.dataconnectionstate.DataConnectionStateLogger" />
+        <service android:name=".logger.managed.position.PositionLogger" />
+        <service android:name=".logger.managed.servicestate.ServiceStateLogger" />
+        <service android:name=".logger.managed.signalstrength.SignalStrengthLogger" />
+        <service android:name=".logger.managed.wifi.WifiLogger" />
+        <service android:name=".logger.managed.callhistory.CallHistoryLogger" />
+        <service android:name=".logger.managed.sms.SMSLogger" />
+        
+        <receiver android:name=".core.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    
+    </application>
+    
+</manifest>

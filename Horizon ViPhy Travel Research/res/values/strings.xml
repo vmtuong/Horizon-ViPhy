@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="application_name">Horizon ViPhy Travel Research</string>
+    
+    <!-- Preferences -->
+    
+    <string name="Preferences_enabled">Preferences.enabled</string>
+    <string name="Preferences_enabled_default">true</string>
+    
+    <string name="Preferences_startOnBoot">Preferences.startOnBoot</string>
+    <string name="Preferences_startOnBoot_default">true</string>
+    
+    <string name="Preferences_logLocation">Preferences.logLocation</string>
+    <string name="Preferences_logLocation_default">false</string>
+    
+    <string name="Preferences_locationMinDistance">Preferences.locationMinDistance</string>
+    <string name="Preferences_locationMinDistance_default">10</string>
+    
+    <string name="Preferences_locationMinTime">Preferences.locationMinTime</string>
+    <string name="Preferences_locationMinTime_default">600</string>
+    
+    <string name="Preferences_category_loggers">Preferences.category.loggers</string>
+    
+    <string name="Preferences_loggers">Preferences.loggers</string>
+    <string name="Preferences_loggers_default">
+        [
+            {
+                \"uniqueID\" : \"aethers.notebook.logger.managed.wifi.WifiLogger\",
+                \"name\" : \"Wifi Logger\",
+                \"description\" : \"Logs the results of scanning Wifi access points\",
+                \"serviceClass\" : \"aethers.notebook.logger.managed.wifi.WifiLogger\",
+                \"configurable\" : true,
+                \"enabled\" : false,
+                \"builtin\" : true,
+                \"deleted\" : false,
+                \"version\" : 1
+            },
+            {
+                \"uniqueID\" : \"aethers.notebook.logger.managed.position.PositionLogger\",
+                \"name\" : \"Position Logger\",
+                \"description\" : \"Logs position\",
+                \"serviceClass\" : \"aethers.notebook.logger.managed.position.PositionLogger\",
+                \"configurable\" : true,
+                \"enabled\" : true,
+                \"builtin\" : true,
+                \"deleted\" : false,
+                \"version\" : 1
+            },
+            {
+                \"uniqueID\" : \"aethers.notebook.logger.managed.celllocation.CellLocationLogger\",
+                \"name\" : \"Cell Location Logger\",
+                \"description\" : \"Logs when the cell location changes.\",
+                \"serviceClass\" : \"aethers.notebook.logger.managed.celllocation.CellLocationLogger\",
+                \"configurable\" : false,
+                \"enabled\" : false,
+                \"builtin\" : true,
+                \"deleted\" : false,
+                \"version\" : 1
+            },
+            {
+                \"uniqueID\" : \"aethers.notebook.logger.managed.dataconnectionstate.DataConnectionStateLogger\",
+                \"name\" : \"Data Connection State Logger\",
+                \"description\" : \"Logs when the data connection state changes.\",
+                \"serviceClass\" : \"aethers.notebook.logger.managed.dataconnectionstate.DataConnectionStateLogger\",
+                \"configurable\" : false,
+                \"enabled\" : false,
+                \"builtin\" : true,
+                \"deleted\" : false,
+                \"version\" : 1
+            },
+            {
+                \"uniqueID\" : \"aethers.notebook.logger.managed.servicestate.ServiceStateLogger\",
+                \"name\" : \"Service State Logger\",
+                \"description\" : \"Logs when the service state changes.\",
+                \"serviceClass\" : \"aethers.notebook.logger.managed.servicestate.ServiceStateLogger\",
+                \"configurable\" : false,
+                \"enabled\" : false,
+                \"builtin\" : true,
+                \"deleted\" : false,
+                \"version\" : 1
+            },
+            {
+                \"uniqueID\" : \"aethers.notebook.logger.managed.signalstrength.SignalStrengthLogger\",
+                \"name\" : \"Signal Strength Logger\",
+                \"description\" : \"Logs when the signal strength changes.\",
+                \"serviceClass\" : \"aethers.notebook.logger.managed.signalstrength.SignalStrengthLogger\",
+                \"configurable\" : false,
+                \"enabled\" : false,
+                \"builtin\" : true,
+                \"deleted\" : false,
+                \"version\" : 1
+            },
+            {
+                \"uniqueID\" : \"aethers.notebook.logger.managed.callhistory.CallHistoryLogger\",
+                \"name\" : \"Call History Logger\",
+                \"description\" : \"Logs when the call history changes.\",
+                \"serviceClass\" : \"aethers.notebook.logger.managed.callhistory.CallHistoryLogger\",
+                \"configurable\" : false,
+                \"enabled\" : true,
+                \"builtin\" : true,
+                \"deleted\" : false,
+                \"version\" : 1
+            },
+            {
+                \"uniqueID\" : \"aethers.notebook.logger.managed.sms.SMSLogger\",
+                \"name\" : \"SMS Logger\",
+                \"description\" : \"Logs ingoing and outgoing sms.\",
+                \"serviceClass\" : \"aethers.notebook.logger.managed.sms.SMSLogger\",
+                \"configurable\" : false,
+                \"enabled\" : true,
+                \"builtin\" : true,
+                \"deleted\" : false,
+                \"version\" : 1
+            }
+        ]
+    </string>
+    
+    <string name="Preferences_loggers_version">Preferences.loggers.default</string>
+    <string name="Preferences_loggers_version_default">1</string>
+    
+    <string name="Preferences_category_appenders">Preferences.category.appenders</string>
+    
+    <string name="Preferences_appenders">Preferences.appenders</string>
+    <string name="Preferences_appenders_default">
+        [
+            {
+                \"uniqueID\" : \"aethers.notebook.appender.managed.file.FileAppender\",
+                \"name\" : \"File Appender\",
+                \"description\" : \"Appends log messages to the filesystem.\",
+                \"serviceClass\" : \"aethers.notebook.appender.managed.file.FileAppender\",
+                \"configurable\" : true,
+                \"enabled\" : true,
+                \"builtin\" : true,
+                \"deleted\" : false,
+                \"version\" : 1
+            },
+            {
+                \"uniqueID\" : \"aethers.notebook.appender.managed.uploader.UploaderAppender\",
+                \"name\" : \"Uploader Appender\",
+                \"description\" : \"Pushes log messages to a remote server.\",
+                \"serviceClass\" : \"aethers.notebook.appender.managed.uploader.UploaderAppender\",
+                \"configurable\" : true,
+                \"enabled\" : true,
+                \"builtin\" : true,
+                \"deleted\" : false,
+                \"version\" : 1
+            }
+        ]
+    </string>
+    
+    <string name="Preferences_appenders_version">Preferences.appenders.default</string>
+    <string name="Preferences_appenders_version_default">1</string>
+    
+    <!-- Wifi Logger Preferences -->
+    
+    <string name="WifiLogger_Preferences_scanInterval">WifiLogger.Preferences.scanInterval</string>
+    <string name="WifiLogger_Preferences_scanInterval_default">5</string>
+    
+    <!-- Position Logger Preferences -->
+    
+    <string name="PositionLogger_Preferences_locationMinDistance">PositionLogger.Preferences.locationMinDistance</string>
+    <string name="PositionLogger_Preferences_locationMinDistance_default">10</string>
+    
+    <string name="PositionLogger_Preferences_locationMinTime">PositionLogger.Preferences.locationMinTime</string>
+    <string name="PositionLogger_Preferences_locationMinTime_default">60</string>
+    
+    <!-- File Appender Preferences -->
+    
+    <string name="FileAppender_Preferences_logfilePath">FileAppender.Preferences.logfilePath</string>
+    <string name="FileAppender_Preferences_logfilePath_default">/aether.log</string>
+    
+    <!-- Uploader Appender Preferences -->
+    
+    <string name="UploaderAppender_Preferences_connectionType">UploaderAppender.Preferences.connectionType</string>
+    <string name="UploaderAppender_Preferences_connectionType_default">Manual</string>
+    
+    <string name="UploaderAppender_Preferences_url">UploaderAppender.Preferences.url</string>
+    <string name="UploaderAppender_Preferences_url_default">http://79.125.109.229:8080/submit</string>
+    
+    <string name="UploaderAppender_Preferences_maxFileSize">UploaderAppender.Preferences.maxFileSize</string>
+    <string name="UploaderAppender_Preferences_maxFileSize_default">1024</string>
+    
+    <string name="UploaderAppender_Preferences_logDirectory">UploaderAppender.Preferences.logDirectory</string>
+    <string name="UploaderAppender_Preferences_logDirectory_default">/aether</string>
+    
+    <string name="UploaderAppender_Preferences_deleteUploadedFiles">UploaderAppender.Preferences.deleteUploadedFiles</string>
+    <string name="UploaderAppender_Preferences_deleteUploadedFiles_default">false</string>
+    
+    <string name="UploaderAppender_Preferences_maxFiles">UploaderAppender_Preferences_maxFiles</string>
+    <string name="UploaderAppender_Preferences_maxFiles_default">-1</string>
+    
+    <string name="UploaderAppender_Preferences_customHeader">UploaderAppender_Preferences_customHeader</string>
+    <string name="UploaderAppender_Preferences_customHeader_default"></string>
+    
+    <string name="viphy_page">http://10.0.2.2:8080/</string>
+    
+    <string name="introduction_title">What do we do?</string>
+    <string name="introduction_text">
+    Does Virtual Travel replace Physical Travel? Mapping People Social and
+    Spatial Networks.
+    \n\n\'Substitution hypothesis\' claims that virtual travel (communications/shared
+    experiences) over ICT can replace physical travel. However, \'complementary
+    hypothesis\' suggests that virtual travel actually increase demand of physical
+    travel, by allowing people to develop and maintain relations and friendships
+    regardless of distance.
+    \n\nThis application integrate with SMS and call log to collect data on the network
+    of contacts the user was communicating with (but not the content of sms and calls).
+    Some additional information such as GPS location, wifi, etc is also collected.
+    But user can turn the loggers off any time.
+    \n\nA series of visualisation of the user\'s social and spatial network will be
+    presented to users as an incentive for your participation.
+    \n\nYour information is safe with us.
+    \n\nContact ... if you have any questions about the research.
+    \nThank you for your participation.
+    </string>
+    
+    <string name="about_title">About</string>
+    <string name="about_text">
+    Contact ... if you have any questions about the research.
+    \n\n----------------
+    \n\nDoes Virtual Travel replace Physical Travel? Mapping People Social and
+    Spatial Networks
+    \n\n\'Substitution hypothesis\' claims that virtual travel (communications/shared
+    experiences) over ICT can replace physical travel. However, \'complementary
+    hypothesis\' suggests that virtual travel actually increase demand of physical
+    travel, by allowing people to develop and maintain relations and friendships
+    regardless of distance.
+    \n\nThis application integrate with SMS and call log to collect data on the network
+    of contacts the user was communicating with (but not the content of sms and calls).
+    Some additional information such as GPS location, wifi, etc is also collected.
+    But user can turn the loggers off any time.
+    \n\nA series of visualisation of the user\'s social and spatial network will be
+    presented to users as an incentive for your participation.
+    \n\nYour information is safe with us.
+    </string>
+    
+</resources>

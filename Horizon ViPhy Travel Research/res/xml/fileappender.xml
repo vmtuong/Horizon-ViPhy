@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"> 
+
+    <PreferenceCategory
+            android:title="File Appender Preferences">
+        <aethers.notebook.core.ui.PersistingButtonPreference
+	            android:key="@string/FileAppender_Preferences_logfilePath"
+	            android:title="Log file path"
+	            android:summary="Filesystem path to log to"
+	            android:defaultValue="@string/FileAppender_Preferences_logfilePath_default" />
+    </PreferenceCategory>
+                
+</PreferenceScreen>

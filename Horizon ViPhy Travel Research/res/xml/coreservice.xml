@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"> 
+
+   <PreferenceCategory
+            android:title="Application Preferences">
+        <CheckBoxPreference
+                android:key="@string/Preferences_enabled"
+                android:title="Logging Enabled"
+                android:summary="Check to enable logging"
+                android:defaultValue="@string/Preferences_enabled_default" />
+        <CheckBoxPreference
+                android:key="@string/Preferences_startOnBoot"
+                android:title="Start on Boot"
+                android:summary="Start logging when phone boots up"
+                android:defaultValue="@string/Preferences_startOnBoot_default"
+                android:dependency="@string/Preferences_enabled" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+            android:title="Location Logging Preferences">
+        <CheckBoxPreference
+            android:key="@string/Preferences_logLocation"
+            android:title="Log Location"
+            android:summary="If checked, every log entry will be tagged with a location"
+            android:defaultValue="@string/Preferences_logLocation_default" />
+        <EditTextPreference
+                android:key="@string/Preferences_locationMinDistance"
+                android:title="Minimum Distance"
+                android:summary="Minimum distance travelled before location updates occur"
+                android:defaultValue="@string/Preferences_locationMinDistance_default"
+                android:inputType="phone" />
+        <EditTextPreference
+                android:key="@string/Preferences_locationMinTime"
+                android:title="Minimum Time"
+                android:summary="Minimum time to wait between location updates"
+                android:defaultValue="@string/Preferences_locationMinTime_default"
+                android:inputType="phone" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+            android:key="@string/Preferences_category_loggers"
+            android:title="Loggers" />
+            
+    <PreferenceCategory
+            android:key="@string/Preferences_category_appenders"
+            android:title="Appenders" />                
+                
+</PreferenceScreen>

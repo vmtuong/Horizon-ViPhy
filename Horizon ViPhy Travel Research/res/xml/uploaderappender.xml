@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"> 
+
+    <PreferenceCategory
+            android:title="Uploader Appender Preferences">
+        <ListPreference
+                android:key="@string/UploaderAppender_Preferences_connectionType"
+                android:title="Upload when"
+                android:summary="Select the connection types to allow uploads during"
+                android:defaultValue="@string/UploaderAppender_Preferences_connectionType_default" />
+        <EditTextPreference
+                android:key="@string/UploaderAppender_Preferences_url"
+                android:title="URL"
+                android:summary="The URL to upload logs to"
+                android:defaultValue="@string/UploaderAppender_Preferences_url_default" />
+        <EditTextPreference
+                android:key="@string/UploaderAppender_Preferences_maxFileSize"
+                android:title="Log File Size"
+                android:summary="Maximum size of file to log before uploading (in Kb)"
+                android:defaultValue="@string/UploaderAppender_Preferences_maxFileSize_default"
+                android:inputType="phone" />
+        <aethers.notebook.core.ui.PersistingButtonPreference
+	            android:key="@string/UploaderAppender_Preferences_logDirectory"
+	            android:title="Log Directory"
+	            android:summary="Filesystem directory to store logs in"
+	            android:defaultValue="@string/UploaderAppender_Preferences_logDirectory_default" />
+	    <CheckBoxPreference 
+	           android:key="@string/UploaderAppender_Preferences_deleteUploadedFiles"
+	           android:title="Delete Uploaded Files"
+	           android:summary="Should files be deleted after upload"
+	           android:defaultValue="@string/UploaderAppender_Preferences_deleteUploadedFiles_default" />
+	    <EditTextPreference
+	           android:key="@string/UploaderAppender_Preferences_maxFiles"
+	           android:title="Maximum Files"
+	           android:summary="Maximum number of files to store"
+	           android:defaultValue=""
+	           android:inputType="phone" /> 
+	    <EditTextPreference
+               android:key="@string/UploaderAppender_Preferences_customHeader"
+               android:title="Custom Header Value"
+               android:summary="Value to send in the custom header"
+               android:defaultValue="@string/UploaderAppender_Preferences_customHeader_default" /> 
+    </PreferenceCategory>
+                
+</PreferenceScreen>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    <TextView 
+      android:textAppearance="?android:attr/textAppearanceLarge" 
+      android:id="@+id/introduction_title" 
+      android:layout_width="wrap_content" 
+      android:layout_height="wrap_content" 
+      android:layout_centerHorizontal="true"
+      android:text="@string/introduction_title">
+    </TextView>
+    <LinearLayout
+	  android:id="@+id/introduction_buttons"
+	  android:orientation="horizontal"
+	  android:layout_width="match_parent"
+	  android:layout_height="wrap_content"
+	  android:layout_alignParentBottom="true"
+	  android:gravity="center_horizontal">
+	    <Button 
+	      android:id="@+id/introduction_accept_button"
+	      android:layout_height="wrap_content"
+	      android:layout_width="wrap_content" 
+	      android:text="Accept">
+	    </Button>
+	    <Button 
+	      android:id="@+id/introduction_exit_button"
+	      android:layout_height="wrap_content"
+	      android:layout_width="wrap_content" 
+	      android:text="Exit">
+	    </Button>
+	</LinearLayout>
+    <ScrollView   
+      android:id="@+id/ScrollView01"
+      android:layout_height="wrap_content"
+      android:layout_width="fill_parent"
+      android:layout_below="@id/introduction_title"
+      android:layout_above="@id/introduction_buttons">
+	    <TextView 
+	      android:id="@+id/introduction_content" 
+	      android:layout_width="fill_parent"
+	      android:layout_height="wrap_content"
+	      android:text="@string/introduction_text">
+	    </TextView>
+	</ScrollView>
+    
+    
+</RelativeLayout>

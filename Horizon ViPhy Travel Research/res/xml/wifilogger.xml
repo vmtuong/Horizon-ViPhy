@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"> 
+
+    <PreferenceCategory
+            android:title="Wifi Logger Preferences">
+        <aethers.notebook.core.ui.EditIntegerPreference
+                android:key="@string/WifiLogger_Preferences_scanInterval"
+                android:title="Scanner Interval"
+                android:summary="Interval between scanning in seconds"
+                android:defaultValue="@string/WifiLogger_Preferences_scanInterval_default" />
+    </PreferenceCategory>
+                
+</PreferenceScreen>
